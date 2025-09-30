@@ -39,42 +39,42 @@ const Work = () => {
       </motion.p>
       
         <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.5 }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5 my-10 dark:text-black"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8, duration: 0.5 }}
+          className="grid grid-cols-auto my-10 gap-5"
         >
-            {workData.map((project, index) => (
-                <motion.div 
-                    key={index}
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.8 + index * 0.1, duration: 0.6 }}
-                    className="grid grid-cols-auto my-10 gap-5"
-                >
-                    <div className="aspect-square rounded-lg relative cursor-pointer bg-cover group bg-center bg-no-repeat">
-                        <div className="bg-white w-10/12 rounded-md absolute bottom left-1/2 -translate-x-1/2
-                         py-3 px-5 items-center justify-between duration-500 group-hover:bottom-5">
-                            <Image src={project.bgImage} alt="" />
-                            <h2 className="text-lg sm:text-xl font-semibold mb-2 text-black">
-                                {project.title}
-                            </h2>
-                            
-                            <p className="text-sm text-gray-700 mb-5 leading-5">
-                                {project.description}
-                            </p>
-                        </div>
-                        <div className="border rounded-full border-black w-6 aspect-square flex items-center
-                         justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                            <Image 
-                            src={assets.send_icon} 
-                            alt="send_icon" 
-                            className="w-5"
-                            />
-                        </div>
-                    </div>
-                </motion.div>
-            ))}
+          {workData.map((project, index) => (
+            <motion.div 
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8 + index * 0.1, duration: 0.6 }}
+              className="aspect-square rounded-lg relative cursor-pointer bg-cover group bg-center bg-no-repeat"
+              style={{ backgroundImage: `url(${project.bgImage})` }}
+            >
+              <div className="">
+                <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2
+                  py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-5">
+                    <h2 className="font-semibold">
+                        {project.title}
+                    </h2>
+                    
+                    <p className="text-sm text-gray-700 ">
+                        {project.description}
+                    </p>
+                </div>
+                <div className="border rounded-full border-black w-9 aspect-square flex items-center
+                  justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                  <Image 
+                  src={assets.send_icon} 
+                  alt="send_icon" 
+                  className="w-5"
+                  />
+                </div>
+              </div>
+            </motion.div>
+          ))}
         </motion.div>
       
       <motion.a 
