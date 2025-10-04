@@ -8,10 +8,10 @@ const Navbar=()=>{
     const [isScroll,setScroll]= useState(false);
 
     const openMenu=()=>{
-        sideMenuRef.current.style.transform='translate(-16rem)'
+        sideMenuRef.current.style.transform='translate(-15rem)'
     }
     const closedMenu=()=>{
-        sideMenuRef.current.style.transform='translate(16rem)'
+        sideMenuRef.current.style.transform='translate(15rem)'
     }
 useEffect(() => {
     const handleScroll = () => {

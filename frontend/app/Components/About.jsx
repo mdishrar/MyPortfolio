@@ -60,7 +60,7 @@ const About = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8 + index * 0.1, duration: 0.5 }}
-                className="border border-gray-400 rounded-xl p-4 sm:p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1
+                className="border border-gray-400 rounded-xl p-4 sm:p-6 cursor-pointer hover:bg-light-hover hover:-translate-y-1
                 duration-500 hover:shadow-black dark:border-white/50 dark:hover:shadow-white/20 dark:hover:bg-darkHover/50"
               >
                 <Image 

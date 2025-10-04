@@ -1,3 +1,4 @@
+'use client'
 import user_image from './user-image.png';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
@@ -36,6 +37,7 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 
+
 export const assets = {
     user_image,
     code_icon,
@@ -73,29 +75,29 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        title: 'Artificial Intelligence generated photos',
+        description: 'based on Mern Stack',
+        bgImage: '/assets/portfolioimag1.jpg',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+        title: 'Messaging App',
+        description: 'ChatApp with friends connection recommendation and realtime messaging',
+        bgImage: '/assets/portfolioimg2.jpg',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
+        title: 'Stock Predictor',
+        description: 'using Agentic ai and stock market data and services',
+        bgImage: '/assets/portfolioimag3.png',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        title: 'Online Voting App',
+        description: 'Using BlockChain technology',
+        bgImage: '/assets/portfolioimag4.jpg',
     },
 ]
 

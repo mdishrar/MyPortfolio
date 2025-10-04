@@ -1,2 +1,16 @@
 @import "tailwindcss";
+@import "tailwindcss";
 
+@theme {
+  --color-light-hover: #fcf4ff;
+  --color-dark-hover: #2a004a;
+  --color-dark-theme: #11001F;
+
+  --font-family-sans: 'Outfit', sans-serif;
+  --font-family-ovo: 'Ovo', serif;
+
+  --shadow-black: 4px 4px 0 #000;
+  --shadow-white: 4px 4px 0 #fff;
+
+  --grid-template-columns-auto: repeat(auto-fit, minmax(200px, 1fr));
+}

@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 const Services = () => {
   return (
     <motion.div 
+      id='services'
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
@@ -43,7 +44,7 @@ const Services = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.5 }}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-10"
+        className=" grid grid-cols-2 gap-6 my-10"
       >
         {serviceData.map(({ icon, title, description, link }, index) => (
           <motion.div 
@@ -51,7 +52,8 @@ const Services = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8 + index * 0.1, duration: 0.6 }}
-            className="border border-gray-400 rounded-lg px-6 sm:px-8 py-8 sm:py-12 hover:shadow-black cursor-pointer hover:-translate-y-2 duration-500 dark:border-white/50 dark:hover:shadow-white/20 dark:hover:bg-darkHover/30 group"
+            className="border border-gray-400 rounded-lg px-8 py-12 hover:bg-light-hover
+             cursor-pointer hover:-translate-y-2 duration-500 hover:shadow-black"
           >
             <Image 
               src={icon} 
